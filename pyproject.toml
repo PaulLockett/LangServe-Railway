@@ -12,6 +12,7 @@ tomli-w = "^1.0.0"
 uvicorn = "^0.23.2"
 fastapi = "^0.103.2"
 langserve = ">=0.0.16"
+langchain = "^0.0.331"
 
 [tool.poetry.group.dev.dependencies]
 uvicorn = "^0.23.2"
