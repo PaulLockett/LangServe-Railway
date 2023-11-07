@@ -4,6 +4,6 @@
         "builder": "NIXPACKS"
     },
     "deploy": {
-        "startCommand": "pip install -U langchain-cli ; langchain serve --host \"[::]:$PORT\""
+        "startCommand": "langchain serve --host \"[::]:$PORT\""
     }
 }
