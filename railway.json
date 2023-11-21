@@ -4,6 +4,6 @@
         "builder": "NIXPACKS"
     },
     "deploy": {
-        "startCommand": "langchain serve"
+        "startCommand": "langchain serve --port 6789"
     }
 }
