@@ -17,6 +17,7 @@ langchain-cli = "^0.0.15"
 [tool.poetry.group.dev.dependencies]
 uvicorn = "^0.23.2"
 pygithub = "^2.1.1"
+pirate-speak = { path = "packages/pirate-speak" }
 
 
 [build-system]
