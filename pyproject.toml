@@ -11,7 +11,7 @@ sse-starlette = "^1.6.5"
 tomli-w = "^1.0.0"
 uvicorn = "^0.23.2"
 fastapi = "^0.104.0"
-langserve = ">=0.0.16"
+langserve = ">=0.0.22"
 langchain-cli = "^0.0.15"
 pirate-speak = { path = "packages/pirate-speak" }
 
