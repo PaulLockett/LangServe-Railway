@@ -5,6 +5,8 @@
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pW9tXP?referralCode=c-aq4K)
 
+> :information_source: **Make sure to set your enviromental variables! The defaults are only placeholders.**
+
 ## Adding packages
 Add the package to your local repo
 ```bash
