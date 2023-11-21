@@ -1,15 +1,12 @@
-# LangServe
+# LangServe  🦜 🏓 on Railway 🚂
 
-## Installation
 
-Install the LangChain CLI if you haven't yet
+## Deploy on Railway
 
-```bash
-pip install -U "langchain-cli[serve]"
-```
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pW9tXP?referralCode=c-aq4K)
 
 ## Adding packages
-
+Add the package to your local repo
 ```bash
 # adding packages from 
 # https://github.com/langchain-ai/langchain/tree/master/templates
@@ -30,6 +27,19 @@ Note: you remove packages by their api path
 langchain app remove my/custom/path/rag
 ```
 
+After adding the project to your local repo you need to add it to your project's
+pyproject.toml
+
+```bash
+#
+# other packages
+$PROJECT_NAME = { path = "packages/$PROJECT_NAME" }
+#
+#
+```
+
+Then redeploy by pushing these changes to your git repo for this railway service.
+
 ## Setup LangSmith (Optional)
 LangSmith will help us trace, monitor and debug LangChain applications. 
 LangSmith is currently in private beta, you can sign up [here](https://smith.langchain.com/). 
@@ -37,13 +47,9 @@ If you don't have access, you can skip this section
 
 
 ```shell
-export LANGCHAIN_TRACING_V2=true
-export LANGCHAIN_API_KEY=<your-api-key>
-export LANGCHAIN_PROJECT=<your-project>  # if not specified, defaults to "default"
-```
-
-## Launch LangServe
-
-```bash
-langchain serve
+# add these to your railway enviromental variables or your local .env
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_API_KEY=<your-api-key>
+LANGCHAIN_PROJECT=<your-project>  
+# if not specified, defaults to "default"
 ```
