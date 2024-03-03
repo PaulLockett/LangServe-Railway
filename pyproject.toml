@@ -10,11 +10,12 @@ python = "^3.9"
 sse-starlette = "^1.6.5"
 tomli-w = "^1.0.0"
 uvicorn = "^0.23.2"
-fastapi = "^0.104.0"
-langserve = ">=0.0.22"
+fastapi = "^0.110.0"
+langserve = "^0.0.46"
 langchain-cli = "*"
 pirate-speak = { path = "packages/pirate-speak" }
 python-dotenv = "^1.0.0"
+langchain = "^0.1.10"
 
 [tool.poetry.group.dev.dependencies]
 uvicorn = "^0.23.2"
